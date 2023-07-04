@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="home-img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">What's new</a></li>
+                <li> <a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just watch <br>It's <span>TITAN</span></h2>
+                <p><span>Titan Watches</span> is a top-tier Indian watchmaker responsible for a paradigm change in the industry by introducing quartz technology and Western aesthetics to the Indian consumer market. Titan is dedicated to providing its customers
+                    with timepieces that serve as a beacon for their creativity at a reasonable price point with the highest quality.</p>
+                <a href="#">Learn more</a>
+
+            </div>
+            <div class="imgbox">
+                <img src="./home-img/img1.webp" class="Titan">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <a href="#"><img src="./home-img/thumb1.webp" onclick="imgSlider('./home-img/img1.webp'); changeCirclecolor('black') "></a>
+            </li>
+            <li>
+                <a href="#"><img src="./home-img/thumb2.webp" onclick="imgSlider('./home-img/img2.webp'); changeCirclecolor('#0d0301')"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./home-img/thumb3.webp" onclick="imgSlider('./home-img/img3.webp'); changeCirclecolor('#02000f')"></a>
+            </li>
+        </ul>
+        <ul class="home-sci">
+            <li>
+                <a href="#"><img src="home-img/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="home-img/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="home-img/instagram.png"></a>
+            </li>
+        </ul>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Titan').src = anything;
+        }
+
+        function changeCirclecolor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
